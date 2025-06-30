@@ -9,6 +9,7 @@ from datetime import datetime
 load_dotenv()
 
 # Assign env vars to constants
+EXOTEL_API_KEY = os.getenv("EXOTEL_API_KEY")
 MONDAY_API_KEY = os.getenv("MONDAY_API_KEY")
 BOARD_ID = os.getenv("BOARD_ID")
 
