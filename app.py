@@ -24,6 +24,8 @@ app = Flask(__name__)
 
 @app.route('/exotel-callback', methods=['POST'])
 def handle_exotel_callback():
+    data = request.get_json()
+    print("Data ", data, flush=True)
     # Extract data from webhook
     From = request.form.get('From')
     Status = request.form.get('Status')
